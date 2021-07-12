@@ -1,4 +1,5 @@
 from pprint import pprint as pp
+from datetime import datetime
 
 
 class Seance:
@@ -73,6 +74,6 @@ class Room2:
 # Testing
 room1 = Room1()
 room2 = Room2()
-s1 = Seance("Psy", 19, room1)
-s2 = Seance("Skyfall", 20, room2)
+s1 = Seance("Psy", datetime(2021, 7, 15, 19, 00), room1)
+s2 = Seance("Skyfall", datetime(2021, 7, 15, 20, 00), room2)
 pp(s1.seats)
